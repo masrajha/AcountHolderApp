@@ -56,7 +56,7 @@ public class AccountHolderDataModel {
         String insertHolder = "INSERT INTO account_holder (holder_id, name, address)"
                 + " VALUES (?,?,?)";
         String insertCorporate = "INSERT INTO corporate_holder (holder_id, contact)"
-                + " VALUES (?,?,?)";
+                + " VALUES (?,?)";
         String insertAccount = "INSERT INTO account (acc_number, balance, holder_id)"
                 + " VALUES (?,?,?)";
         PreparedStatement stmtHolder = conn.prepareStatement(insertHolder);

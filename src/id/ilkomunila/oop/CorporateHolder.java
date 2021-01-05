@@ -6,6 +6,7 @@
 package id.ilkomunila.oop;
 
 import java.util.ArrayList;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 /**
@@ -17,7 +18,7 @@ public class CorporateHolder extends AccountHolder{
 
     public CorporateHolder(Integer holderID, String name, String address, String contact, ArrayList<Account> accounts) {
         super(holderID, name, address, accounts);
-        this.contact.set(contact);
+        this.contact=new SimpleStringProperty(contact);
     }
 
     public CorporateHolder(Integer holderID, String name, String address, String contact, Account account) {
