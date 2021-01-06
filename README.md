@@ -2,6 +2,8 @@
 > Sistem dapat digunakan untuk transaksi perekaman data pemegang akun di bank, dimana terdapat 2 jenis akun yaitu individual dan corporate.
 > Setiap Pemegang Akun dapat memiliki 1 atau lebih  akun.
 
+https://www.youtube.com/playlist?list=PLKOWpC2xXzR9E7KNlBg67RjwHG70HQAhZ
+
 Libraries and Tools of this project:
 - mysql-connector-java-5.1.xx.jar
 - sqlite-jdbc-3.xx.jar

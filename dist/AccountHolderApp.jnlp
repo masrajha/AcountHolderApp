@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AccountHolderApp.jar" size="17135" download="eager" />
+    <jar href="AccountHolderApp.jar" size="17186" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.49.jar" size="1006904" download="eager" />
     <jar href="lib\sqlite-jdbc-3.34.0.jar" size="7296329" download="eager" />
   </resources>
