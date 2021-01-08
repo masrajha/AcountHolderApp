@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: 1d3557;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="id.ilkomunila.oop.AccountHolderFormController">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: 1d3557;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ilkomunila.oop.AccountHolderFormController">
    <children>
       <MenuBar layoutY="2.0">
         <menus>
@@ -131,7 +131,89 @@
                 </Tab>
                 <Tab text="Corporate Holder">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="672.0" prefWidth="1272.0">
+                                 <children>
+                                    <AnchorPane prefHeight="675.0" prefWidth="359.0" style="-fx-background-color: e63946;">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Label layoutX="9.0" layoutY="14.0" prefHeight="17.0" prefWidth="273.0" text="Acount Holder System" textFill="#fffefe">
+                                             <font>
+                                                <Font size="27.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfHolderID1" disable="true" layoutX="9.0" layoutY="82.0" prefHeight="34.0" prefWidth="275.0" promptText="Holder ID" />
+                                          <TextField fx:id="tfName1" layoutX="8.0" layoutY="123.0" prefHeight="34.0" prefWidth="275.0" promptText="Holder Name" />
+                                          <TextField fx:id="tfAddress1" layoutX="8.0" layoutY="164.0" prefHeight="34.0" prefWidth="275.0" promptText="Holder Address" />
+                                          <TextField fx:id="tfAccNumber1" disable="true" layoutX="8.0" layoutY="284.0" prefHeight="34.0" prefWidth="275.0" promptText="Account Number" />
+                                          <TextField fx:id="tfAccBalance1" layoutX="9.0" layoutY="328.0" prefHeight="34.0" prefWidth="275.0" promptText="Account Balance" />
+                                          <Button fx:id="btnAddAccountHolder1" layoutX="7.0" layoutY="465.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" text="Add Account Holder" />
+                                          <Button fx:id="btnReload1" layoutX="7.0" layoutY="506.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" text="Reload Data Table" />
+                                          <Button fx:id="btnClear1" layoutX="7.0" layoutY="547.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" text="Clear Form" />
+                                          <Label fx:id="lblSaveStatus1" layoutX="12.0" layoutY="403.0" prefHeight="17.0" prefWidth="265.0" textFill="#040457" />
+                                          <TextField fx:id="tfAddress11" layoutX="7.0" layoutY="205.0" prefHeight="34.0" prefWidth="275.0" promptText="Corpate Contact" />
+                                          <Label layoutX="103.0" layoutY="48.0" prefHeight="25.0" prefWidth="67.0" style="-fx-font-weight: bold;" text="Corpate" textAlignment="CENTER" textFill="#080f79">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="675.0" prefWidth="938.0">
+                                       <children>
+                                          <VBox layoutX="-2.0" prefHeight="675.0" prefWidth="963.0">
+                                             <children>
+                                                <AnchorPane prefHeight="402.0" prefWidth="915.0" style="-fx-background-color: #a8dadc;">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <TableView fx:id="tblAccHolder1" prefHeight="400.0" prefWidth="941.0">
+                                                         <columns>
+                                                            <TableColumn fx:id="colHolderID1" prefWidth="75.0" text="Hoder ID" />
+                                                            <TableColumn fx:id="colName1" prefWidth="201.0" text="Name" />
+                                                            <TableColumn fx:id="colAddress1" prefWidth="219.0" text="Address" />
+                                                            <TableColumn fx:id="colGender1" prefWidth="141.0" text="Contact" />
+                                                            <TableColumn fx:id="colNumAccounts1" prefWidth="114.0" text="Num Accounts" />
+                                                         </columns>
+                                                      </TableView>
+                                                   </children>
+                                                </AnchorPane>
+                                                <HBox prefHeight="244.0" prefWidth="963.0" style="-fx-background-color: #f1faee;">
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" left="10.0" right="10.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <AnchorPane prefHeight="244.0" prefWidth="430.0" style="-fx-background-color: #a8dadc;">
+                                                         <children>
+                                                            <TableView fx:id="tblAccount1" prefHeight="239.0" prefWidth="424.0">
+                                                               <columns>
+                                                                  <TableColumn fx:id="colAccNumber1" prefWidth="195.0" text="Account Number" />
+                                                                  <TableColumn fx:id="colBalance1" prefWidth="202.0" text="Balance" />
+                                                               </columns>
+                                                            </TableView>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane prefHeight="244.0" prefWidth="513.0">
+                                                         <children>
+                                                            <TextField fx:id="tfNewHolderID1" disable="true" layoutX="22.0" layoutY="8.0" prefHeight="34.0" prefWidth="275.0" promptText="Holder ID" />
+                                                            <TextField fx:id="tfNewAccNumber1" disable="true" layoutX="22.0" layoutY="51.0" prefHeight="34.0" prefWidth="275.0" promptText="New Account Number" />
+                                                            <TextField fx:id="tfNewAccBalance1" layoutX="22.0" layoutY="95.0" prefHeight="34.0" prefWidth="275.0" promptText="New Account Balance" />
+                                                            <Button fx:id="btnAddAccount1" layoutX="22.0" layoutY="140.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" text="Add Account" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children></AnchorPane>
                   </content>
                 </Tab>
               </tabs>
