@@ -9,8 +9,9 @@ erDiagram
           AHLI ||..|{ KETERANGAN-AHLI : "memberi keterangan"
           UNDANG-UNDANG||--|{PASAL : has
           UNSUR-PASAL }|--|| PASAL : has
-          UNSUR-PASAL }|..|| KETERANGAN-TERSANGKA : has
-          UNSUR-PASAL }|..|| KETERANGAN-SAKSI : has
+          UNSUR-PASAL ||..|| KETERANGAN-TERSANGKA : has
+          UNSUR-PASAL ||..|| KETERANGAN-SAKSI : has
+          UNSUR-PASAL ||..|| KETERANGAN-AHLI : has
           USER || -- |{ PEMBUKTIAN: "Entry Data"
           PERSON || -- || TERSANGKA: menjadi
           PERSON || -- || SAKSI: menjadi
